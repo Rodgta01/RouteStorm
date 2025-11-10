@@ -1,0 +1,9 @@
+#Simple folder structure
+#Note - only add last like if using OSRM
+
+spl
+
+/RouteStorm/
+  route_storm.py
+  stops.csv
+  /osrm/
