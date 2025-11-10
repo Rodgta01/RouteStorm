@@ -1,0 +1,8 @@
+#gives real-world travel times for TSP insead of "as-the-crow-flies" 
+#Can be found at below repository 
+#https://github.com/Project-OSRM/osrm-backend/releases
+
+bash
+osrm-extract indiana-latest.osm.pbf -p profiles/car.lua
+osrm-contract indiana-latest.osrm
+osrm-routed indiana-latest.osrm
