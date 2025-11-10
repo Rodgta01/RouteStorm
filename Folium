@@ -1,0 +1,4 @@
+#If you want to add an environment for mapping, use Folium 
+
+bash
+pip install folium
