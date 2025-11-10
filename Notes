@@ -1,0 +1,8 @@
+#Notes
+1. Road ETA vs air-line distance - if you can run osrm locally or use something like OpenRouteService, swap the based matrix for road ETA - and you'll get better realism
+2. Your weather source can be whatever you want as long as it's open source; Open-Meteo, Meteostat, NOAA/NWS - dealer's choice 
+3. Use max(origin, destination) factors for simplicity. 
+    a. For better, use any and all arrival timestamps per leg with propagated ETAs along the route and query weather per edge time
+    b. Add sample for mid-segment weather 
+4. You will need to set penalty values - I would start conservatively (10%-30% slow-downs) and calibrate with your telematics or GPS system
+    a. Observed run times in rain/snow/wind
