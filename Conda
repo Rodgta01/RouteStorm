@@ -1,0 +1,4 @@
+#Optional Conda Environment 
+
+conda create -n tspweather python=3.11
+conda activate tspweather
